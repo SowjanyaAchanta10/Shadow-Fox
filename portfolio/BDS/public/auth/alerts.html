@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blood Donation Alert</title>
+  <style>
+    .alert-box {
+      width: 90%;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #fff;
+    }
+
+    .alert-success {
+      border-left: 8px solid #4CAF50;
+      background-color: #e9fbe9;
+    }
+
+    .alert-danger {
+      border-left: 8px solid #f44336;
+      background-color: #ffeaea;
+    }
+
+    .alert-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .alert-message {
+      font-size: 1em;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 18px;
+      cursor: pointer;
+      color: #888;
+    }
+
+    .close-btn:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Blood Match Alert -->
+  <div class="alert-box alert-success">
+    <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="alert-title">Blood Match Found!</div>
+    <div class="alert-message">
+      A donor with blood type <strong>O+</strong> is available near your location. Please respond quickly if you can donate or need blood.
+    </div>
+  </div>
+
+  <!-- Blood Emergency Alert -->
+  <div class="alert-box alert-danger">
+    <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="alert-title">Urgent Blood Needed!</div>
+    <div class="alert-message">
+      Emergency request for <strong>A-</strong> blood at City Hospital. Immediate donation required. Contact: <strong>+1234567890</strong>
+    </div>
+  </div>
+
+</body>
+</html>

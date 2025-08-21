@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Blood Donation Centers</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Find Nearby Blood Donation Centers</h1>
+        </header>
+        
+        <div class="location-controls">
+            <button id="findLocation">Use My Current Location</button>
+            <button id="showAllCenters">Show All Centers</button>
+            <div id="status">Click to find centers near you</div>
+        </div>
+        
+        <div id="map"></div>
+        
+        <div id="nearestCenters" class="center-info">
+            <h3>Nearby Centers</h3>
+            <ul id="centersList"></ul>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-functions-compat.js"></script>
+    
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap" async defer></script>
+    
+    <!-- Your JavaScript files -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

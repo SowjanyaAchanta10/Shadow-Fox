@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeSaver - Blood Donation System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+
+  <header class="bg-danger text-white">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+              <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <i class="fas fa-heartbeat me-2"></i> LifeSaver
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/public/auth/login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/public/auth/register.html">Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container text-center hero-section">
+      <h1 class="display-4 fw-bold text-danger">Donate Blood, Save Lives</h1>
+      <p class="lead">Join our community of heroes who give the gift of life</p>
+      <div class="mt-4">
+        <a href="auth/register.html" class="btn btn-lg btn-danger mx-2">
+          <i class="fas fa-user-plus me-2"></i>Become a Donor
+        </a>
+        <a href="/recipient/search.html" class="btn btn-lg btn-outline-danger mx-2">
+          <i class="fas fa-search me-2"></i>Find Blood
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5><i class="fas fa-heartbeat me-2"></i> LifeSaver</h5>
+          <p>Connecting donors with those in need from 2025</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/public/auth/about.html" class="text-white">About Us</a></li>
+            
+            <li><a href="/public/auth/camps.html" class="text-white">Donation Camps</a></li>
+            <li><a href="/public/auth/faq.html" class="text-white">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-envelope me-2"></i> contact@lifesaver.org</p>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>&copy; 2025 LifeSaver. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Only core scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+  <script src="/firebase-config.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><div class="container mt-4">
+    <div class="card">
+      <div class="card-header bg-danger text-white">
+        <h3>Search for Blood</h3>
+      </div>
+      <div class="card-body">
+        <form id="bloodSearchForm">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Blood Group</label>
+              <select id="searchBloodGroup" class="form-select" required>
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <!-- All blood groups -->
+              </select>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Location</label>
+              <input type="text" id="location" class="form-control" placeholder="City or ZIP code">
+            </div>
+            
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Radius (km)</label>
+              <select id="radius" class="form-select">
+                <option value="10">10 km</option>
+                <option value="25">25 km</option>
+                <option value="50">50 km</option>
+                <option value="100">100 km</option>
+              </select>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-danger">Search</button>
+        </form>
+        
+        <div id="searchResults" class="mt-4">
+          <!-- Results will be displayed here -->
+        </div>
+      </div>
+    </div>
+  </div>
