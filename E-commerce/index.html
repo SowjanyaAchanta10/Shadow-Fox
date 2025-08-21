@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopKart — Flipkart‑Style Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="nav">
+    <div class="nav__left">
+      <a href="#" class="logo">Shop<span>Kart</span></a>
+      <div class="search">
+        <i class="ri-search-line"></i>
+        <input id="searchInput" type="text" placeholder="Search for products, brands and more" />
+      </div>
+    </div>
+
+    <div class="nav__right">
+      <button id="loginBtn" class="btn btn--light"><i class="ri-user-line"></i> <span id="loginText">Login</span></button>
+      <button id="cartBtn" class="btn"><i class="ri-shopping-cart-2-line"></i> Cart <span class="badge" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <!-- Filled by JS -->
+  </section>
+
+  <!-- Hero Slider -->
+  <section class="hero">
+    <div class="hero__track" id="heroTrack">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1920&auto=format&fit=crop" alt="Phones" />
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1920&auto=format&fit=crop" alt="Laptops" />
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1920&auto=format&fit=crop" alt="Fashion" />
+      <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1920&auto=format&fit=crop" alt="Appliances" />
+    </div>
+    <button class="hero__ctrl prev" id="prevSlide"><i class="ri-arrow-left-s-line"></i></button>
+    <button class="hero__ctrl next" id="nextSlide"><i class="ri-arrow-right-s-line"></i></button>
+  </section>
+
+  <!-- Toolbar -->
+  <section class="toolbar">
+    <div class="toolbar__left">
+      <span id="resultsCount">0 results</span>
+    </div>
+    <div class="toolbar__right">
+      <select id="sortSelect">
+        <option value="pop">Sort: Popular</option>
+        <option value="priceAsc">Price: Low to High</option>
+        <option value="priceDesc">Price: High to Low</option>
+        <option value="rating">Rating</option>
+        <option value="new">Newest</option>
+      </select>
+      <button id="clearFilters" class="btn btn--light">Clear</button>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <main class="grid" id="productGrid">
+    <!-- Cards filled by JS -->
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer__header">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" id="closeCart"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="drawer__body" id="cartItems">
+      <!-- Cart items by JS -->
+    </div>
+    <div class="drawer__footer">
+      <div class="totals">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+      <button class="btn btn--primary" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- Login Modal -->
+  <dialog id="loginModal" class="modal">
+    <form method="dialog" class="modal__card" id="loginForm">
+      <div class="modal__header">
+        <h3>Login</h3>
+        <button class="icon-btn" id="closeLogin"><i class="ri-close-line"></i></button>
+      </div>
+      <div class="modal__body">
+        <label>Email
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </label>
+        <label>Password
+          <input type="password" id="password" placeholder="••••••••" required minlength="6" />
+        </label>
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--light" id="cancelLogin" value="cancel">Cancel</button>
+        <button class="btn btn--primary" id="submitLogin" value="default">Login</button>
+      </div>
+      <p class="hint">Demo only — no real authentication. Use any email and a 6+ char password.</p>
+    </form>
+  </dialog>
+
+  <footer class="footer">
+    <div class="footer__cols">
+      <div>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+          <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> ShopKart</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
